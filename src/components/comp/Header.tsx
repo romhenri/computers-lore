@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button";
 
 const Header = () => {
   return (
-      <div className="container mx-auto mt-4 px-4 md:px-6 lg:px-8 border">
-        <header className="flex h-20 w-full shrink-0 items-center justify-center
+      <div className="container mx-auto mt-4 px-4 lg:px-6 lg:px-8 border max-w-[1080px]">
+        <header className="header flex h-20 shrink-0 items-center justify-center
          px-4 md:px-6">
           <div className="flex gap-2">
 

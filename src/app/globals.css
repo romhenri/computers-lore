@@ -74,3 +74,14 @@
     @apply bg-background text-foreground;
   }
 }
+
+main, header {
+  max-width: 1080px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  padding: 10px;
+}
