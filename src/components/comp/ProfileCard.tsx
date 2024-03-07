@@ -12,13 +12,14 @@ interface IProfileCard {
   bio?: string;
   image?: string;
   email?: string;
-}
+};
 
 const ProfileCard : React.FC<IProfileCard>  = (
   { name, bio, image, email }
 ) => {
   return (
-    <Card className="flex items-start p-4 gap-4 w-full lg:w-96 mx-auto">
+    <Card className="flex items-start py-4 px-3 gap-4 w-full 
+    lg:basis-[21.4rem]">
       {/* Div with image */}
       <div>
         <Avatar>
