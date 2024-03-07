@@ -1,7 +1,18 @@
+import ComputerCard from "@/components/comp/ComputerCard";
+import LineTitle from "@/components/ui/line-title";
+
 const Timeline = () => {
   return (
     <main>
-      <h1>Timeline</h1>
+      <LineTitle>
+        Linha do Tempo
+      </LineTitle>
+
+      <ComputerCard 
+        machine="Apple I"
+        creator="Steve Wozniak"
+        year={1976}
+      />
     </main>
   )
 }

@@ -1,12 +1,12 @@
 import ProfileCard from "@/components/comp/ProfileCard";
+import LineTitle from "@/components/ui/line-title";
 
 const About = () => {
   return (
     <main>
-
-      <h1 className="m-4 text-center ">
-        Grupo
-      </h1>
+      <LineTitle>
+        Grupo Desblocados
+      </LineTitle>
 
       <div className="flex gap-2 mx-auto justify-items-center flex-col md:flex-row">
         <ProfileCard 
