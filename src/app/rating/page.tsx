@@ -27,7 +27,7 @@ const RatingPage = () => {
         Avalie a Plataforma:
       </LineTitle>
 
-      <section className="mb-4">
+      <section className="mb-12">
         <Tabs defaultValue="account" className="w-[400px] mx-auto">
           <TabsList className="grid w-full grid-cols-2">
             <TabsTrigger value="account">Inscrita</TabsTrigger>
