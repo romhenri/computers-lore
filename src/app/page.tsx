@@ -2,10 +2,13 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <main className="">
-      <section className="flex p-20 gap-16 border justify-center">
+    <main className="border-x border-b">
+      <section className="flex p-20 gap-16 border justify-center rounded">
         <div>
-          <h1 className="text-5xl leading-[3.4rem] mb-2">
+          <h1 className="mb-2
+          text-3xl 
+          lg:text-5xl lg:leading-[3.4rem]
+          ">
             Conheça a <br /> História dos <br /> Computadores
           </h1>
           <p className="text-neutral-500">

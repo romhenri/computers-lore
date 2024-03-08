@@ -13,7 +13,7 @@ const About = () => {
        flex-col md:flex-row flex-wrap mb-4">
         <ProfileCard 
           name="Rômulo Henrique"
-          bio="Fullstack developer | GameDev"
+          bio="Fullstack Developer | GameDev"
           image="https://avatars.githubusercontent.com/u/123867521?v=4"
           />
 
@@ -38,8 +38,7 @@ const About = () => {
         <ProfileCard
           name="Lucas Rodrigo"
           bio="Programmer"
-          // Defalt picture
-          image="https://avatars.githubusercontent.com/u/46926904?v=4"
+          image="https://avatars.githubusercontent.com/u/130937453?v=4"
         />
       </div>
 
