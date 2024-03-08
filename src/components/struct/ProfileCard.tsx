@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { Card } from '../ui/card';
+import { Card } from '../base/card';
 import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@/components/ui/avatar";
+} from "@/components/base/avatar";
 
 interface IProfileCard {
   name: string;

@@ -1,5 +1,5 @@
 import ComputerCard from "@/components/comp/ComputerCard";
-import LineTitle from "@/components/ui/line-title";
+import LineTitle from "@/components/base/line-title";
 
 const Timeline = () => {
   return (
@@ -15,6 +15,6 @@ const Timeline = () => {
       />
     </main>
   )
-}
+};
 
 export default Timeline;

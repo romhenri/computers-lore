@@ -1,10 +1,10 @@
 import React from 'react';
-import { Card } from '../ui/card';
+import { Card } from '@/components/base/card';
 import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@/components/ui/image";
+} from "@/components/base/image";
 
 interface IComputerCardProps {
   machine: string;

@@ -1,6 +1,6 @@
 import React from 'react';
-import HeaderLink from './HeaderLink';
-import ToggleTheme from '@/components/comp/ToggleTheme';
+import HeaderLink from '@/components/comp/HeaderLink';
+import ToggleTheme from '@/components/struct/ToggleTheme';
 
 const Header = () => {
   return (

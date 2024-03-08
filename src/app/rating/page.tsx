@@ -1,8 +1,8 @@
-import ProfileCard from "@/components/comp/ProfileCard";
-import LineTitle from "@/components/ui/line-title";
-import Line from "@/components/ui/line";
+import ProfileCard from "@/components/struct/ProfileCard";
+import LineTitle from "@/components/base/line-title";
+import Line from "@/components/base/line";
 
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/base/button"
 import {
   Card,
   CardContent,
@@ -10,15 +10,15 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
+} from "@/components/base/card"
+import { Input } from "@/components/base/input"
+import { Label } from "@/components/base/label"
 import {
   Tabs,
   TabsContent,
   TabsList,
   TabsTrigger,
-} from "@/components/ui/tabs"
+} from "@/components/base/tabs"
 
 const RatingPage = () => {
   return (
