@@ -4,7 +4,9 @@ import ToggleTheme from '@/components/struct/ToggleTheme';
 
 const Header = () => {
   return (
-      <div className="container mx-auto mt-4 lg:px-0 border max-w-[1080px] items-center self-center rounded">
+      <div className="container mx-auto mt-0 pt-4 border  items-center self-center rounded-none w-auto
+      lg:max-w-[1080px] lg:rounded lg:px-0 lg:mt-4 lg:pt-0
+      ">
         <header className="header flex py-4 shrink-0 items-center justify-between flex-wrap
         px-2 lg:h-16 lg:px-6 lg:py-2">
           <div>

@@ -4,9 +4,9 @@ import { Button } from '@/components/base/button';
 
 export default function Home() {
   return (
-    <main className="border-x border-b">
+    <main className="border-x border-b p-4">
       <section 
-        className="flex p-12 justify-between border rounded mb-2 gap-8 flex-wrap lg:flex-nowrap lg:p-20"
+        className="flex p-12 justify-between border rounded mb-4 gap-8 flex-wrap lg:flex-nowrap lg:p-16"
       >
         <div>
           <h1 className="mb-2
@@ -36,7 +36,10 @@ export default function Home() {
       </section>
 
       <section 
-        className="flex p-16 border gap-24 items-center"
+        className="flex p-16 border gap-8 rounded
+        flex-wrap lg:p-16 justify-between
+        lg:flex-nowrap lg:items-center lg:gap-24
+        "
       >
         <div>
           <h2 className="text-xl">
@@ -49,7 +52,7 @@ export default function Home() {
         </div>
         <div>
           <Link href={"/rating"}>
-            <Button variant="outline">
+            <Button variant="outline" className="px-12">
               Fazer Avaliação
             </Button>
           </Link>

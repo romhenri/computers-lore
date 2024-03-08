@@ -28,7 +28,7 @@ const RatingPage = () => {
       </LineTitle>
 
       <section className="mb-12">
-        <Tabs defaultValue="account" className="w-[400px] mx-auto">
+        <Tabs defaultValue="account" className="w-[100%] mx-auto">
           <TabsList className="grid w-full grid-cols-2">
             <TabsTrigger value="account">Inscrita</TabsTrigger>
             <TabsTrigger value="password">Anônima</TabsTrigger>
