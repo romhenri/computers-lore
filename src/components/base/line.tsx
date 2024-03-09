@@ -4,4 +4,12 @@ const Line = () => {
   )
 };
 
-export default Line;
+const LineSpacer = () => {
+  return (
+    <div className="py-4">
+      <hr />
+    </div>
+  )
+}
+
+export { Line, LineSpacer };
