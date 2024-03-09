@@ -9,19 +9,23 @@ import {
 interface IComputerCardProps {
   machine: string;
   creator: string;
-  year: number;
+  year: number; 
+  img: string | null;
 }
 
 const ComputerCard : React.FC<IComputerCardProps> = (
   {
-    machine, creator, year
+    machine, creator, year, img
   }
 ) => {
   return (
     <Card className="p-3 flex gap-3">
       <div>
         <Avatar>
-        <AvatarImage src="https://avatars.githubusercontent.com/u/1024025?v=4" alt="@shadcn" />
+        <AvatarImage 
+          src={img || ''}
+          alt={machine}
+        />
         <AvatarFallback>...</AvatarFallback>
         </Avatar>
       </div>

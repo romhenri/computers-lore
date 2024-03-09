@@ -75,6 +75,10 @@
   }
 }
 
+body {
+  overflow-y: scroll;
+}
+
 main, header {
   max-width: 1080px;
   margin: auto;

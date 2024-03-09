@@ -1,0 +1,586 @@
+[
+  {
+    "id": 1,
+    "age": null,
+    "machine": "Ábaco",
+    "creator": null,
+    "subCreators": [
+      null
+    ],
+    "country": "CN",
+    "institute": null,
+    "year": null,
+    "betweenMax": null,
+    "yearAC": 5500,
+    "description": "Formado por fios paralelos e contas ou arruelas deslizantes, que de acordo com a sua posição, representa a quantidade a ser trabalhada, contém 2 conjuntos por fio, 5 contas no conjunto das unidades e 2 contas que representam 5 unidades.",
+    "goal": "Fazer Somas",
+    "news": "Expressar números nas colunas das unidades, dezenas, centenas, milhares, etc.",
+    "prevId": null,
+    "nextId": 2,
+    "images": [
+      {
+        "uri": "https://img.freepik.com/fotos-premium/abaco-de-madeira-velho-e-antigo-para-contar-e-calcular_1831-703.jpg",
+        "label": "Ábaco Antigo"
+      }
+    ],
+    "machineArt": null,
+    "creatorArt": null
+  },
+
+
+  {
+    "id": 2,
+    "age": 407,
+    "machine": "Ossos de Napier",
+    "creator": "John Napier de Merchiston",
+    "subCreators": [
+      null
+    ],
+    "country": "UK",
+    "institute": null,
+    "year": 1617,
+    "betweenMax": null,
+    "yearAC": null,
+    "description": "Os ossos de Napier, também conhecidos como bastões de Napier, são dispositivos de cálculo inventados por John Napier, um matemático escocês do século XVI. Eles consistem em conjuntos de barras marcadas com números em uma grade. Cada barra é dividida em segmentos representando os dígitos de um número. Ao alinhar as barras corretamente, é possível realizar multiplicação e divisão convertendo essas operações em adições e subtrações. ",
+    "goal": "simplificar cálculos complexos ",
+    "news": "Metódo diferente de realizar  operações com números grandes.",
+    "prevId": 1,
+    "nextId": 3,
+    "images": [
+      {
+        "uri": "https://i.etsystatic.com/6191225/r/il/b7948f/4675024010/il_fullxfull.4675024010_roy5.jpg",
+        "label": "Exemplar dos ossos de napier."
+      }
+    ],
+    "machineArt": null,
+    "creatorArt": null
+  },
+
+
+  {
+    "id": 3,
+    "age": 380,
+    "machine": "Pascalina",
+    "creator": "Blaise Pascal",
+    "subCreators": [
+      null
+    ],
+    "country": "FR",
+    "institute": null,
+    "year": 1642,
+    "betweenMax": 1644,
+    "yearAC": null,
+    "description": "A Pascalina era uma máquina de calcular mecânica que funcionava com base em engrenagens e rodas dentadas. Ela podia realizar operações de adição e subtração, utilizando um sistema de rotores para registrar os números e um mecanismo de engrenagens para realizar os cálculos. ",
+    "goal": "O objetivo principal da Pascalina, era facilitar e agilizar a realização de cálculos matemáticos. ",
+    "news": "A Pascalina introduziu uma abordagem mecânica para realizar cálculos.",
+    "prevId": 2,
+    "nextId": 4,
+    "images": [
+      {
+        "uri": "https://2.bp.blogspot.com/-ebEdmr72-yk/UuAnCfv6SpI/AAAAAAAAAic/liMGK2T0Eo0/s1600/pascalina-primeira-calculadores-criada-por-blaise-pascal-em-1642-2.png",
+        "label": "Pascalina"
+      }
+    ],
+    "machineArt": null,
+    "creatorArt": null
+  },
+
+
+  {
+    "id": 4,
+    "age": 351,
+    "machine": "Step reckoner",
+    "creator": " Gottfried Wilhelm Leibniz",
+    "subCreators": [
+      null
+    ],
+    "country": "DE",
+    "institute": null,
+    "year": 1671,
+    "betweenMax": 1673,
+    "yearAC": null,
+    "description": "O Step Reckoner consistia em uma série de engrenagens e cilindros interligados que podiam ser movidos por manivelas. Cada engrenagem representava um dígito decimal, e as posições das engrenagens eram ajustadas para representar números diferentes. Quando as manivelas eram giradas, as engrenagens se moviam em conjunto, realizando automaticamente adições e subtrações.",
+    "goal": "Adicionar novas operações a ideia original de Pascal",
+    "news": "O Step Reckoner foi a primeira máquina mecânica a ser capaz de realizar multiplicação e divisão. Isso representou um avanço significativo, pois ampliou consideravelmente a utilidade da máquina, permitindo a execução de uma gama mais ampla de cálculos matemáticos sem intervenção manual constante. ",
+    "prevId": 3,
+    "nextId": 5,
+    "images": [
+      {
+        "uri": "https://cdn.britannica.com/16/23616-004-8C1C0851/reproduction-Step-Reckoner-A-drums-original-Gottfried.jpg",
+        "label": "Step Reckoner"
+      }
+    ],
+    "machineArt": null,
+    "creatorArt": null
+  },
+
+  {
+    "id": 5,
+    "age": 220,
+    "machine": "Tear de Jacquard",
+    "creator": " Joseph Marie Jacquard",
+    "subCreators": [
+      null
+    ],
+    "country": "FR",
+    "institute": null,
+    "year": 1804,
+    "betweenMax": 1805,
+    "yearAC": null,
+    "description": "A estrutura básica do tear de Jacquard é composta por uma estrutura de suporte, onde são fixados os fios verticais (chamados de urdume) e os fios horizontais (chamados de trama). O grande avanço do tear de Jacquard reside no seu sistema de controle, que é baseado em cartões perfurados.",
+    "goal": null,
+    "news": "A contribuição para a computação se dá pelo fato de que os cartões perfurados do tear de Jacquard podem ser considerados como uma forma primitiva de programação. Eles representam um método de armazenamento e execução de instruções codificadas de maneira física. ",
+    "prevId": 4,
+    "nextId": 6,
+    "images": [
+      {
+        "uri": "https://www.stylourbano.com.br/wp-content/uploads/2017/02/TEAR-JACQUARD-min.jpg",
+        "label": "Tear de Jacquard"
+      }
+    ],
+    "machineArt": null,
+    "creatorArt": null
+  },
+
+
+  {
+    "id": 6,
+    "age": 202,
+    "machine": "Máquina Diferencial",
+    "creator": "Charles Babbage",
+    "subCreators": [
+      null
+    ],
+    "country": "UK",
+    "institute": null,
+    "year": 1822,
+    "betweenMax": null,
+    "yearAC": null,
+    "description": "A ideia por trás da Máquina Diferencial era criar um dispositivo que pudesse calcular automaticamente funções polinomiais, que eram comumente usadas em várias aplicações científicas e de engenharia na época. A máquina utilizava engrenagens e componentes mecânicos para realizar cálculos.",
+    "goal": "Criar uma máquina capaz de calcular automaticamente tabelas de funções polinomiais, o que envolvia calcular diferenças finitas.",
+    "news": "A presença de uma forma de armazenamento foi um elemento distintivo e inovador na Máquina das Diferenças de Babbage. Esse componente crucial permitiu que a máquina retivesse temporariamente os resultados intermediários de seus cálculos",
+    "prevId": 5,
+    "nextId": 7,
+    "images": [
+      {
+        "uri": "https://s2-techtudo.glbimg.com/bF5mBNes_5Wo6NQprbAKn3Y-hZM=/0x0:800x800/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/Z/R/JSmgXHT6S7A3Ozq8j8rg/3-1.jpg",
+        "label": "Máquina Diferencial."
+      }
+    ],
+    "machineArt": null,
+    "creatorArt": null
+  },
+
+
+  {
+    "id": 7,
+    "age": null,
+    "machine": "Máquina Analítica",
+    "creator": "Charles Babbage",
+    "subCreators": [
+      null
+    ],
+    "country": "UK",
+    "institute": null,
+    "year": null,
+    "betweenMax": null,
+    "yearAC": null,
+    "description": "A Máquina Analítica foi um projeto do século XIX concebido por Charles Babbage. Era um computador mecânico programável, usando cartões perfurados para programação. Podia realizar qualquer operação matemática, tinha o moinho(CPU) , o armazém, o leitor e a impressora. Apesar de não ter sido totalmente construída,foi a primeira máquina que mereceu ser chamada de computador.",
+    "goal": "A maquina analítica incorporava uma unidade lógica aritmética, fluxo de controle na forma de ramificações condicionais, loops e memória integrada, tornando-o o primeiro projeto para um computador de uso geral",
+    "news": "A Máquina Analítica, concebida por Charles Babbage, introduziu várias inovações importantes, incluindo computação programável por cartões perfurados, unidade de armazenamento, arquitetura modular, capacidade de realizar operações matemáticas complexas e entrada/saída de dados. Essas características estabeleceram as bases para o desenvolvimento futuro dos computadores modernos e tiveram um impacto significativo no campo da tecnologia da informação.",
+    "prevId": 6,
+    "nextId": 8,
+    "images": [
+      {
+        "uri": "https://upload.wikimedia.org/wikipedia/commons/a/ac/AnalyticalMachine_Babbage_London.jpg",
+        "label": "Protótipo da maquina analítica."
+      }
+    ],
+    "machineArt": null,
+    "creatorArt": null
+  },
+
+
+  {
+    "id": 8,
+    "age": 135,
+    "machine": "Tabulador de censo de Hollerith",
+    "creator": "Herman Hollerith",
+    "subCreators": [
+      null
+    ],
+    "country": "EUA",
+    "institute": null,
+    "year": 1889,
+    "betweenMax": null,
+    "yearAC": null,
+    "description":" O Tabulador de Hollerith, inventado por Herman Hollerith no final do século XIX, foi uma máquina revolucionária para processamento de dados que utilizava cartões perfurados. Essa inovação desempenhou um papel fundamental na automação de tarefas de processamento de dados, especialmente em contextos como o censo populacional e atividades estatísticas.",
+    "goal": "O objetivo principal do Tabulador de Hollerith era automatizar o processo de tabulação e análise de grandes volumes de dados, especialmente em contextos como o censo populacional. ",
+    "news":"O Tabulador de Hollerith foi uma inovação que revolucionou o processamento de dados no final do século XIX. Suas principais características incluíam o uso de cartões perfurados como método de entrada de dados, leitura automática desses cartões, processamento automático de dados e melhorias significativas em eficiência e precisão. Essa inovação estabeleceu os fundamentos para o desenvolvimento futuro da computação moderna. ",
+    "prevId": 7,
+    "nextId": 9,
+    "images": [
+      {
+        "uri": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/HollerithMachine.CHM.jpg/1200px-HollerithMachine.CHM.jpg",
+        "label": "Tabulador de Hollerith."
+      }
+    ],
+    "machineArt": null,
+    "creatorArt": null
+  },
+
+
+  
+  {
+    "id": 9,
+    "age": 98,
+    "machine": "Enigma",
+    "creator": "Hugo Alexander Koch",
+    "subCreators": [
+      null
+    ],
+    "country": "DE",
+    "institute": null,
+    "year": 1926,
+    "betweenMax": null,
+    "yearAC": null,
+    "description": "O Enigma foi uma máquina de criptografia eletromecânica utilizada pela Alemanha Nazista durante a Segunda Guerra Mundial para codificar mensagens secretas. Desenvolvido originalmente na década de 1920 para fins comerciais, o Enigma foi posteriormente adotado pelas forças armadas alemãs devido à sua eficácia na proteção das comunicações. A máquina Enigma funcionava através de rotores, que eram discos que continham as letras do alfabeto. Quando uma tecla era pressionada, os rotores giravam, alterando a correspondência de letras e produzindo um texto cifrado. A configuração dos rotores era alterada diariamente com um conjunto de chaves, tornando a quebra do código extremamente desafiadora.",
+    "goal": "criptografar e proteger as comunicações militares",
+    "news": "Portabilidade e criptografia automática",
+    "prevId": 8,
+    "nextId": 10,
+    "images": [
+      {
+        "uri": "https://s2.glbimg.com/TWCzUx2XAQ7deE24oL11dyMP_u0=/e.glbimg.com/og/ed/f/original/2019/08/30/69714272_1347536952068161_513362189462011904_n.jpg",
+        "label": "Enigma"
+      }
+    ],
+    "machineArt": null,
+    "creatorArt": null
+  },
+
+  {
+    "id": 10,
+    "age": 81,
+    "machine": "Colossus Mark I",
+    "creator": "Thomas Flowers",
+    "subCreators": [
+      "Sidney Broadhurst, William Chandler "
+    ],
+    "country": "UK",
+    "institute": "Bletchley Park",
+    "year": 1943,
+    "betweenMax": null,
+    "yearAC": null,
+    "description": "O primeiro Colossus, denominado Colossus Mark I, entrou em operação em 1943 e foi uma realização notável para a época. Era capaz de realizar cálculos complexos com uma velocidade e precisão sem precedentes, o que permitia quebrar códigos muito rapidamente. A capacidade do Colossus de processar grandes volumes de dados e realizar cálculos complexos desempenhou um papel fundamental no sucesso dos esforços aliados de inteligência durante a Segunda Guerra Mundial. Sua existência e eficácia foram mantidas em sigilo até décadas após o término da guerra, devido à natureza altamente confidencial de seu trabalho.",
+    "goal": "Decifrar as comunicações codificadas",
+    "news": "Contava com um sistema decimal de 10 dígitos em vez de sistema binário de unidades e zeros",
+    "prevId": 9,
+    "nextId": 11,
+    "images": [
+      {
+        "uri": "https://tm.ibxk.com.br/2013/6/materias/9119619556174249.jpg",
+        "label": "Colossus Mark I"
+      }
+    ],
+    "machineArt": null,
+    "creatorArt": null
+  },
+  {
+    "id": 11,
+    "age": 80,
+    "machine": "Colossus Mark II",
+    "creator": "Thomas Flowers",
+    "subCreators": [
+      "Allen Coombs"
+    ],
+    "country": "UK",
+    "institute": "Bletchley Park",
+    "year": 1944,
+    "betweenMax": null,
+    "yearAC": null,
+    "description": "Foi construído para aumentar a capacidade de processamento e melhorar a eficiência na quebra de códigos alemães. O Colossus Mark II foi introduzido em 1944 e era mais rápido e mais versátil do que seu antecessor, permitindo uma decifração mais rápida e eficiente das mensagens codificadas. Sua introdução marcou um avanço significativo nos esforços dos Aliados para decifrar as comunicações inimigas e contribuiu para o sucesso das operações de inteligência durante a guerra.",
+    "goal": "Decifrar as comunicações codificadas",
+    "news": "Era mais rápido do que seu antecessor, maior capacidade de processamento e diversas melhorias técnicas.",
+    "prevId": 10,
+    "nextId": 12,
+    "images": [
+      {
+        "uri": "https://live.staticflickr.com/2831/10134919003_079c6abd10_b.jpg",
+        "label": "Colossus Mark II"
+      }
+    ],
+    "machineArt": null,
+    "creatorArt": null
+  },
+  {
+    "id": 12,
+    "age": 80,
+    "machine": "Havard Mark I",
+    "creator": "Howard Aiken",
+    "subCreators": [
+      
+    ],
+    "country": "US",
+    "institute": "Havard",
+    "year": 1944,
+    "betweenMax": null,
+    "yearAC": null,
+    "description": "Composto por milhares de relés, eletroímãs e outros dispositivos mecânicos, o Mark I era capaz de realizar uma variedade de operações matemáticas, incluindo adição, subtração, multiplicação, divisão e funções trigonométricas. Foi projetado para ser um instrumento poderoso para realizar cálculos científicos e de engenharia, bem como para aplicações militares, como cálculos balísticos.",
+    "goal": "Eealizar cálculos complexos.",
+    "news": "Era controlado por programa e uma das primeiras máquinas computacionais electromecânicas de grande escala.",
+    "prevId": 11,
+    "nextId": 13,
+    "images": [
+      {
+        "uri": "https://cdn.britannica.com/93/23593-050-99D22EC5/Harvard-Mark-I-Howard-Aiken-ballistics-calculations-1943.jpg",
+        "label": "Havard Mark I"
+      }
+    ],
+    "machineArt": null,
+    "creatorArt": null
+  },
+  {
+    "id": 13,
+    "age": 78,
+    "machine": "Eniac",
+    "creator": "John W. Mauchly e J. Presper Eckert",
+    "subCreators": [
+      "John von Neumann e Herman Goldstine"
+    ],
+    "country": "US",
+    "institute": "Moore School of Electrical Engineering da Universidade da Pensilvânia",
+    "year": 1946,
+    "betweenMax": null,
+    "yearAC": null,
+    "description": "O ENIAC foi projetado para ser um computador de propósito geral, capaz de realizar uma ampla variedade de cálculos e operações matemáticas. Sua arquitetura serial e flexibilidade de programação permitiam que fosse adaptado para diferentes tarefas científicas e militares após a guerra.",
+    "goal": "Fins de cálculos balísticos",
+    "news": "Transistors e Ampla variedade de cálculos",
+    "prevId": 12,
+    "nextId": 14,
+    "images": [
+      {
+        "uri": "https://files.tecnoblog.net/wp-content/uploads/2011/02/785px-Eniac.jpg",
+        "label": "Eniac"
+      }
+    ],
+    "machineArt": null,
+    "creatorArt": null
+  },
+  {
+    "id": 14,
+    "age": 73,
+    "machine": "Edvac",
+    "creator": "John von Neumann",
+    "subCreators": [
+      "Sua equipe"
+    ],
+    "country": "US",
+    "institute": " Instituto de Estudos Avançados de Princeton",
+    "year": 1951,
+    "betweenMax": null,
+    "yearAC": null,
+    "description": "O EDVAC foi projetado para ser um computador de propósito geral e foi o primeiro a introduzir vários conceitos fundamentais da arquitetura de computadores moderna. Utilizava um sistema binário de representação de dados, o que significa que todas as informações eram representadas por sequências de zeros e uns. Ele empregava válvulas eletrônicas para processamento e o armazenamento de dados, o que permitia um desempenho muito maior do que os computadores eletromecânicos anteriores.",
+    "goal": "criar um computador eletrônico digital de propósito geral, capaz de executar uma ampla variedade de tarefas computacionais de forma eficiente e flexível.",
+    "news": "Conceito de armazenamento de programas na memória do computador",
+    "prevId": 13,
+    "nextId": 15,
+    "images": [
+      {
+        "uri": "https://miro.medium.com/v2/resize:fit:828/format:webp/0*2kx5-yZsKftLCuQn.jpg",
+        "label": "Edvac"
+      }
+    ],
+    "machineArt": null,
+    "creatorArt": null
+  },
+  {
+    "id": 15,
+    "age": 71,
+    "machine": "IMB 650",
+    "creator": "Jay Forrester",
+    "subCreators": [
+      
+    ],
+    "country": "US",
+    "institute": "IBM",
+    "year": 1953,
+    "betweenMax": null,
+    "yearAC": null,
+    "description": "Em 1953, Jay Forrester, do MIT, construiu uma memória magnéticamenor e bem mais rápida, a qual substituía as que usavam válvulas eletrônicas. Já em  1954, a IBM concluiu o primeiro computador produzido em série, o 650, que era de tamanho médio e enquanto isso, Gordon Teal, da Texas Instruments, descobre um meio defabricar transistores de cristais isolados de silício a um custo baixo.",
+    "goal": "Assebilidade e Facilidade de uso",
+    "news": "Uso de fita magnética e arquitetura do ponto flutuante",
+    "prevId": 14,
+    "nextId": 16,
+    "images": [
+      {
+        "uri": "https://upload.wikimedia.org/wikipedia/commons/0/07/IBM_650_EMMA.jpg",
+        "label": "IBM 650"
+      }
+    ],
+    "machineArt": null,
+    "creatorArt": null
+  },
+  {
+    "id": 16,
+    "age": 65,
+    "machine": "IBM/360",
+    "creator": "Gene Amdahl",
+    "subCreators": [
+      
+    ],
+    "country": "US",
+    "institute": "IBM",
+    "year": 1959,
+    "betweenMax": null,
+    "yearAC": null,
+    "description": "O IBM System/360 foi um marco na história da computação, introduzindo uma arquitetura unificada e flexível que permitia compatibilidade entre diferentes modelos, além de oferecer escalabilidade para atender às diversas necessidades de negócios e científicas. Com seu sistema operacional OS/360, o IBM/360 proporcionou suporte robusto para múltiplos usuários e tarefas, enquanto sua compatibilidade binária facilitou a migração de software. Sua influência foi duradoura, moldando o desenvolvimento futuro da indústria de computadores e estabelecendo novos padrões para desempenho, flexibilidade e interoperabilidade.",
+    "goal": "Compatibilidade e Flexibilidade",
+    "news": "uso de CI, ou pastilhas, que ficaram conhecidas como Chips.",
+    "prevId": 15,
+    "nextId": 17,
+    "images": [
+      {
+        "uri": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/DM_IBM_S360.jpg/1280px-DM_IBM_S360.jpg",
+        "label": "IBM/360"
+      }
+    ],
+    "machineArt": null,
+    "creatorArt": null
+  },
+  {
+    "id": 17,
+    "age": 59,
+    "machine": "PDP-8",
+    "creator": "Edson de Castro",
+    "subCreators": [
+      
+    ],
+    "country": "US",
+    "institute": "Digital Equipment Corporation (DEC)",
+    "year": 1965,
+    "betweenMax": null,
+    "yearAC": null,
+    "description": "Com sua arquitetura simples de 12 bits e seu tamanho compacto, o PDP-8 foi amplamente adotado por laboratórios de pesquisa, universidades e empresas de pequeno porte. Sua acessibilidade e facilidade de uso ajudaram a popularizar a computação em pequena escala, contribuindo significativamente para o desenvolvimento da indústria de computadores. O PDP-8 teve um impacto duradouro, influenciando o desenvolvimento subsequente de minicomputadores e computadores pessoais.",
+    "goal": "Compacto e acessível",
+    "news": "Um dos primeiros minicomputadores comerciais de sucesso",
+    "prevId": 16,
+    "nextId": 18,
+    "images": [
+      {
+        "uri": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/PDP-8_%281%29.jpg/330px-PDP-8_%281%29.jpg",
+        "label": "PDP-8"
+      }
+    ],
+    "machineArt": null,
+    "creatorArt": null
+  },
+  {
+    "id": 18,
+    "age": 54,
+    "machine": "B2500",
+    "creator": "Corporação Burroughs",
+    "subCreators": [
+      
+    ],
+    "country": "US",
+    "institute": "Burroughs",
+    "year": 1970,
+    "betweenMax": null,
+    "yearAC": null,
+    "description": "Era um sistema de grande escala, utilizado principalmente em instituições governamentais e grandes empresas para processamento de dados e outras aplicações computacionais. Embora tenha sido um avanço significativo no cenário da computação brasileira na época, o B2500 acabou sendo superado por avanços tecnológicos subsequentes e pela entrada de computadores estrangeiros mais avançados no mercado brasileiro.",
+    "goal": "desempenho sólido e confiável para processamento de dados em grande escala.",
+    "news": "Circuito integrado com sucesso e suportava uma variedade de linguagens de programação e sistemas operacionais. Ele também oferecia recursos avançados de gerenciamento de dados, como bancos de dados relacionais e processamento de transações online (OLTP).",
+    "prevId": 17,
+    "nextId": 19,
+    "images": [
+      {
+        "uri": "https://images.computerhistory.org/revonline/images/102646243-05-01-06.jpg?w=600",
+        "label": "B2500"
+      }
+    ],
+    "machineArt": null,
+    "creatorArt": null
+  },
+  {
+    "id": 19,
+    "age": 49,
+    "machine": "ALTAIR 8800",
+    "creator": " Ed Roberts",
+    "subCreators": [
+      
+    ],
+    "country": "US",
+    "institute": "Micro Instrumentation and Telemetry Systems",
+    "year": 1975,
+    "betweenMax": null,
+    "yearAC": null,
+    "description": "O Altair 8800, em sua arquitetura modular possibilitava a adição de cartões de expansão, enquanto sua interface relativamente simples permitia que usuários iniciantes se envolvessem na programação e experimentação. O Altair 8800 desempenhou um papel crucial no estabelecimento da cultura de computação pessoal.",
+    "goal": "Fornecer aos entusiastas de computadores um sistema acessível e funcional que lhes permitisse explorar e experimentar com a computação pessoal",
+    "news": "Um dos primeiros computadores pessoais disponíveis comercialmente",
+    "prevId": 18,
+    "nextId": 20,
+    "images": [
+      {
+        "uri": "https://images.computerhistory.org/revonline/images/102646243-05-01-06.jpg?w=600",
+        "label": "Altair 8800"
+      }
+    ],
+    "machineArt": null,
+    "creatorArt": null
+  },
+  {
+    "id": 20,
+    "age": 48,
+    "machine": "APPLE I",
+    "creator": "Steve Jobs",
+    "subCreators": [
+      "Steve Wozniak e Ronald Wayne"
+    ],
+    "country": "US",
+    "institute": "Apple",
+    "year": 1976,
+    "betweenMax": null,
+    "yearAC": null,
+    "description": "O Apple I foi um marco na história da computação pessoal, representando a primeira incursão da Apple no mercado de tecnologia. Projetado por Steve Wozniak e lançado em 1976, o Apple I foi um computador de placa de circuito simples, vendido como um kit para entusiastas e hobistas. Com um microprocessador MOS Technology 6502 e 4 KB de memória RAM, exigia que os usuários adicionassem seu próprio teclado, monitor e fonte de alimentação.",
+    "goal": "Fornecer plataforma acessível e funcional para a experimentação e aprendizado de computação pessoa",
+    "news": "Permitia aos usuários montarem e personalizarem seus próprios sistemas de computação. ",
+    "prevId": 19,
+    "nextId": 21,
+    "images": [
+      {
+        "uri": "https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2013/06/24/7appleileilaomuseuefe.jpg",
+        "label": "APPLE I"
+      }
+    ],
+    "machineArt": null,
+    "creatorArt": null
+  },
+  {
+    "id": 21,
+    "age": 47,
+    "machine": "APPLE II",
+    "creator": "Steve Jobs",
+    "subCreators": [
+      "Wozniak"
+    ],
+    "country": "US",
+    "institute": "Apple",
+    "year": 1977,
+    "betweenMax": null,
+    "yearAC": null,
+    "description": "O Apple II teve várias iterações e modelos ao longo dos anos, com atualizações de hardware e software. Foi um dos computadores pessoais mais populares dos anos 70 e início dos anos 80, amplamente adotado em escolas e residências. Sua popularidade foi impulsionada por uma ampla gama de software disponível, incluindo jogos, aplicativos educacionais e de produtividade.",
+    "goal": "Gráficos Coloridos e Som",
+    "news": "O Apple II teve uma ampla gama de software disponível, incluindo jogos, aplicativos educacionais e de produtividade.",
+    "prevId": 20,
+    "nextId": null,
+    "images": [
+      {
+        "uri": "https://www.hardware.com.br/static/wp/2021/08/24/4.jpeg?fm=pjpg&ixlib=php-3.3.0",
+        "label": "APPLE II"
+      }
+    ],
+    "machineArt": null,
+    "creatorArt": null
+  }
+]
