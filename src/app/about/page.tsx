@@ -1,6 +1,6 @@
 import ProfileCard from "@/components/struct/ProfileCard";
 import LineTitle from "@/components/base/line-title";
-import Line from "@/components/base/line";
+import { Line } from "@/components/base/line";
 
 const About = () => {
   return (
