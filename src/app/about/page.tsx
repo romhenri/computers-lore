@@ -4,7 +4,7 @@ import { Line } from "@/components/base/line";
 
 const About = () => {
   return (
-    <main>
+    <main className="pt-4 lg:border-x lg:border-b lg:p-4">
       <LineTitle>
         Grupo Desblocados
       </LineTitle>

@@ -1,5 +1,6 @@
 import ComputerCard from "@/components/struct/ComputerCard";
 import LineTitle from "@/components/base/line-title";
+import { Line } from "@/components/base/line";
 
 import data from "../../data/machines.json";
 
@@ -17,25 +18,32 @@ interface IImage {
 
 const machines : IMachine[] = data;
 
+const MachineList = () => {
+  return (
+    <section className="flex flex-col gap-2">
+      {machines && machines.map((machine, index) => (
+        <ComputerCard 
+          key={index}
+          machine={machine.machine || ''}
+          creator={machine.creator || ''}
+          year={machine.year || 0}
+          img={machine.images &&
+              machine.images[0] ? machine.images[0].uri : ''}
+        />
+      ))}
+    </section>
+  );
+};
+
 const Timeline = () => {
   return (
-    <main>
+    <main className="pt-4 lg:border-x lg:border-b lg:p-4">
       <LineTitle>
         Linha do Tempo
       </LineTitle>
 
-      <section className="flex flex-col gap-2">
-        {machines && machines.map((machine, index) => (
-          <ComputerCard 
-            key={index}
-            machine={machine.machine || ''}
-            creator={machine.creator || ''}
-            year={machine.year || 0}
-            img={machine.images &&
-               machine.images[0] ? machine.images[0].uri : ''}
-          />
-        ))}
-      </section>
+      <MachineList />
+      <Line />
     </main>
   )
 };

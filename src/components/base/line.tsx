@@ -1,6 +1,6 @@
 const Line = () => {
   return (
-    <hr className="mb-4" />
+    <hr className="my-4" />
   )
 };
 

@@ -1,10 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/base/button';
+import { Line } from "@/components/base/line";
 
 export default function Home() {
   return (
-    <main className="pt-4 lg:pt-0 lg:border-x lg:border-b lg:p-4">
+    <main className="pt-4 lg:border-x lg:border-b lg:p-4">
       <section 
         className="flex p-12 justify-between border rounded mb-4 gap-8 flex-wrap lg:flex-nowrap lg:p-16"
       >
@@ -59,6 +60,7 @@ export default function Home() {
           </Link>
         </div>
       </section>
+      <Line />
     </main>
   );
 };
