@@ -1,8 +1,7 @@
-import ProfileCard from "@/components/struct/ProfileCard";
 import LineTitle from "@/components/base/line-title";
 import { Line, LineSpacer } from "@/components/base/line";
-
-import { Button } from "@/components/base/button"
+import InputOpinion from "@/components/comp/InputOpinion";
+import { Button } from "@/components/base/button";
 import {
   Card,
   CardContent,
@@ -11,82 +10,33 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/base/card"
-import { Input } from "@/components/base/input"
-import { Label } from "@/components/base/label"
+import { Input } from "@/components/base/input";
+import { Label } from "@/components/base/label";
 import {
   Tabs,
   TabsContent,
   TabsList,
   TabsTrigger,
-} from "@/components/base/tabs"
-
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectLabel,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/base/select"
+} from "@/components/base/tabs";
 
 const Form = () => {
   return(
     <div>
-      <div className="space-y-1">
-        <Label htmlFor="name">Design:</Label>
-        <Select>
-          <SelectTrigger className="w-[180px]">
-            <SelectValue placeholder="-" />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectGroup>
-              <SelectItem value="5">Ótimo</SelectItem>
-              <SelectItem value="4">Bom</SelectItem>
-              <SelectItem value="3">Regular</SelectItem>
-              <SelectItem value="2">Ruim</SelectItem>
-              <SelectItem value="1">Péssimo</SelectItem>
-            </SelectGroup>
-          </SelectContent>
-        </Select>
-      </div>
-      <div className="space-y-1">
-        <Label htmlFor="name">Didática:</Label>
-        <Select>
-          <SelectTrigger className="w-[180px]">
-            <SelectValue placeholder="-" />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectGroup>
-              <SelectItem value="5">Ótimo</SelectItem>
-              <SelectItem value="4">Bom</SelectItem>
-              <SelectItem value="3">Regular</SelectItem>
-              <SelectItem value="2">Ruim</SelectItem>
-              <SelectItem value="1">Péssimo</SelectItem>
-            </SelectGroup>
-          </SelectContent>
-        </Select>
-      </div>
-      <div className="space-y-1">
-        <Label htmlFor="name">Conteúdo:</Label>
-        <Select>
-          <SelectTrigger className="w-[180px]">
-            <SelectValue placeholder="-" />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectGroup>
-              <SelectItem value="5">Ótimo</SelectItem>
-              <SelectItem value="4">Bom</SelectItem>
-              <SelectItem value="3">Regular</SelectItem>
-              <SelectItem value="2">Ruim</SelectItem>
-              <SelectItem value="1">Péssimo</SelectItem>
-            </SelectGroup>
-          </SelectContent>
-        </Select>
-      </div>
+      <InputOpinion 
+        mainText="Design"
+        desc="Estética, cores e organização visual."
+      />
+      <InputOpinion 
+        mainText="Didática"
+        desc="Clareza e objetividade na transmissão do conteúdo."
+      />
+      <InputOpinion 
+        mainText="Conteúdo"
+        desc="Qualidade e relevância do material."
+      />
     </div>
-  )
-}
+  );
+};
 
 const RatingPage = () => {
   return (
