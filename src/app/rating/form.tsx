@@ -1,10 +1,11 @@
 "use client";
 
-import { zodResolver } from "@hookform/resolvers/zod"
-import { useForm } from "react-hook-form"
-import { z } from "zod"
+import emailjs from 'emailjs-com';
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
 
-import { LineSpacer } from "@/components/base/line";
+import { LineSpacer, Spacer } from "@/components/base/line";
 import { Button } from "@/components/base/button";
 import {
   Form,
@@ -14,7 +15,7 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/base/form"
+} from "@/components/base/form";
 import {
   Card,
   CardContent,
@@ -32,7 +33,50 @@ import {
   TabsTrigger,
 } from "@/components/base/tabs";
 import InputOpinion from "@/components/comp/InputOpinion";
-import { toast } from "@/components/base/use-toast"
+import { Textarea } from "@/components/base/textarea";
+
+type IRating = {
+  opinion: string;
+  opinion2: string;
+  opinion3: string;
+  liked?: string;
+  disliked?: string;
+  idea?: string;
+};
+
+function sendEmail(data: IRating) {
+  const  {
+    opinion,
+    opinion2,
+    opinion3,
+    liked,
+    disliked,
+    idea,
+  } = data;
+
+  const message = `Design: ${opinion}/5
+  Conteúdo: ${opinion2}/5
+  Didática: ${opinion3}/5
+  Gostou: ${liked || "-"}
+  Não gostou: ${disliked || "-"}
+  Sugestão: ${idea || "-"}
+  `
+
+  const serviceID = "service_ne0oufn";
+  const templateID = "template_vjo82vy";
+  const templateParams = {
+    from_name: `Avaliação de Usuário`,
+    message: message,
+  }
+  const publicKey = "xFBAbGm4Q9scA5Rzl";
+  // eslint-disable-next-line
+  emailjs.send(serviceID, templateID, templateParams, publicKey)
+  .then((response) => {
+    alert("Email enviado com sucesso!")
+  }, (err) => {
+    console.log(err);
+  });
+}
 
 const FormSchema = z.object({
   opinion: z
@@ -47,6 +91,18 @@ const FormSchema = z.object({
     .string({
       required_error: "Selecione uma opção.",
     }),
+  liked: z
+    .string({
+      required_error: "Selecione uma opção.",
+    }).optional(),
+  disliked: z
+    .string({
+      required_error: "Selecione uma opção.",
+    }).optional(),
+  idea: z
+    .string({
+      required_error: "Selecione uma opção.",
+    }).optional(),
 })
   
 const TheForm = () => {
@@ -57,14 +113,15 @@ const TheForm = () => {
   function onSubmit(data: z.infer<typeof FormSchema>) {
     console.log(data);
 
-    toast({
-      title: "You submitted the following values:",
-      description: (
-        <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
-          <code className="text-white">{JSON.stringify(data, null, 2)}</code>
-        </pre>
-      ),
-    });
+    sendEmail(data);
+
+    form.reset(); // Do not worked
+    form.setValue('opinion', '');
+    form.setValue('opinion2', '');
+    form.setValue('opinion3', '');
+    form.setValue('liked', '');
+    form.setValue('disliked', '');
+    form.setValue('idea', '');
   };
 
   return(
@@ -78,7 +135,7 @@ const TheForm = () => {
             <FormItem>
               <InputOpinion 
                   mainText="Design"
-                  desc="Estética, cores e organização visual."
+                  desc="Estética e organização visual."
                   onValueChange={field.onChange}
                 />
             </FormItem>
@@ -91,8 +148,8 @@ const TheForm = () => {
           render={({field}) => (
             <FormItem>
               <InputOpinion 
-                mainText="Didática"
-                desc="Clareza e objetividade na transmissão do conteúdo."
+                mainText="Conteúdo"
+                desc="Qualidade e relevância do conteúdo."
                 onValueChange={field.onChange}
               />
             </FormItem>
@@ -105,13 +162,71 @@ const TheForm = () => {
           render={({field}) => (
             <FormItem>
               <InputOpinion 
-                mainText="Funcionalidade"
-                desc="Facilidade de uso e navegação."
+                mainText="Didática"
+                desc="Clareza e objetividade na comunicação"
                 onValueChange={field.onChange}
               />
             </FormItem>
           )}
         />
+        <LineSpacer />
+
+        <FormField
+          control={form.control}
+          name="liked"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>O que você gostou?</FormLabel>
+              <FormControl>
+                <Textarea
+                  placeholder="(Opcional)"
+                  className="resize-none"
+                  {...field}
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <Spacer />
+
+        <FormField
+          control={form.control}
+          name="disliked"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>O que você NÃO gostou?</FormLabel>
+              <FormControl>
+                <Textarea
+                  placeholder="(Opcional)"
+                  className="resize-none"
+                  {...field}
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <Spacer />
+
+        <FormField
+          control={form.control}
+          name="idea"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Tem alguma sugestão ou ideia?</FormLabel>
+              <FormControl>
+                <Textarea
+                  placeholder="(Opcional)"
+                  className="resize-none"
+                  {...field}
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <Spacer />
 
         <FormMessage>
           {form.formState.errors.opinion?.message}
@@ -135,57 +250,55 @@ const TheForm = () => {
 const FormSection = () => {
   return (
     <section className="mb-12">
-        <Tabs defaultValue="account" className="w-[100%] max-w-[500px] mx-auto">
-          <TabsList className="grid w-full grid-cols-2">
-            <TabsTrigger value="account">Inscrita</TabsTrigger>
-            <TabsTrigger value="password">Anônima</TabsTrigger>
-          </TabsList>
+      <Tabs defaultValue="account" className="w-[100%] max-w-[500px] mx-auto">
+        <TabsList className="grid w-full grid-cols-2">
+          <TabsTrigger value="account">Inscrita</TabsTrigger>
+          <TabsTrigger value="password">Anônima</TabsTrigger>
+        </TabsList>
 
-          <TabsContent value="account">
-            <Card>
-              <CardHeader>
-                <CardTitle>Avaliação</CardTitle>
-                <CardDescription>
-                  Ajude-nos a melhorar continuamnete a plataforma. Com sua opinião podemos melhorar a experiência de todos.
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-2">
-                <div className="space-y-1">
-                  <Label htmlFor="name">Nome:</Label>
-                  <Input id="name" defaultValue="" 
-                  placeholder="João Fulano"/>
-                </div>
-                <div className="space-y-1">
-                  <Label htmlFor="username">Email:</Label>
-                  <Input id="username" defaultValue="" placeholder="exemplo@gmail.com"/>
-                </div>
-                <LineSpacer />
-                </CardContent>
-
-                <TheForm />
-            </Card>
-          </TabsContent>
-
-          <TabsContent value="password">
-            <Card>
-              <CardHeader>
-                <CardTitle>Avaliação Anônima</CardTitle>
-                <CardDescription>
-                  Ajude-nos a melhorar continuamnete a plataforma com sua opinião sincera, sem se identificar.
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-2">
-
+        <TabsContent value="account">
+          <Card>
+            <CardHeader>
+              <CardTitle>Avaliação</CardTitle>
+              <CardDescription>
+                Ajude-nos a melhorar continuamnete a plataforma. Com sua opinião podemos melhorar a experiência de todos.
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-2">
+              <div className="space-y-1">
+                <Label htmlFor="name">Nome:</Label>
+                <Input id="name" 
+                  defaultValue="" 
+                  placeholder="Alan Turing"
+                />
+              </div>
+              <div className="space-y-1">
+                <Label htmlFor="username">Email:</Label>
+                <Input id="username" defaultValue="" placeholder="exemplo@gmail.com"/>
+              </div>
               <LineSpacer />
+              </CardContent>
 
               <TheForm />
+          </Card>
+        </TabsContent>
 
-              </CardContent>
-            </Card>
-          </TabsContent>
-        </Tabs>
-      </section>
-  )
+        <TabsContent value="password">
+          <Card>
+            <CardHeader>
+              <CardTitle>Avaliação Anônima</CardTitle>
+              <CardDescription>
+                Ajude-nos a melhorar continuamnete a plataforma com sua opinião sincera, sem se identificar.
+              </CardDescription>
+            </CardHeader>
+            <LineSpacer />
+
+            <TheForm />
+          </Card>
+        </TabsContent>
+      </Tabs>
+    </section>
+  );
 };
 
 export default FormSection;

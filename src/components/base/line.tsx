@@ -10,6 +10,12 @@ const LineSpacer = () => {
       <hr />
     </div>
   )
-}
+};
 
-export { Line, LineSpacer };
+const Spacer = () => {
+  return (
+    <div className="py-1" />
+  )
+};
+
+export { Line, LineSpacer, Spacer };
