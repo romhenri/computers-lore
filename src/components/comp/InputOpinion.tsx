@@ -12,11 +12,14 @@ import { Label } from "@/components/base/label";
 interface IOpinion {
   mainText: string;
   desc: string;
+  onValueChange?: (value: string) => void;
 }
 
 const InputOpinion : React.FC<IOpinion> = ({
   mainText,
-  desc
+  desc,
+  onValueChange,
+  ...props
 }) => {
   return (
   <div className="space-y-1 my-4">
@@ -26,7 +29,7 @@ const InputOpinion : React.FC<IOpinion> = ({
           {desc}
         </span>
       </Label>
-      <Select>
+      <Select onValueChange={onValueChange} {...props}>
         <SelectTrigger className="w-full">
           <SelectValue placeholder="-" />
         </SelectTrigger>

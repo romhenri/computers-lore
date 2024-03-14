@@ -45,7 +45,7 @@ export default function Home() {
       >
         <div>
           <h2 className="text-xl">
-            Você poder ajudar a melhorar a plataforma!
+            Você pode ajudar a melhorar a plataforma!
           </h2>
           <p className="text-neutral-500">
             Se identificando ou de forma anônima.
