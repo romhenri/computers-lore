@@ -72,6 +72,11 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      // Background com imagem for any timeline item
+      backgroundImage: {
+        "timeline1": "url('http://localhost:3000/assets/bg/timeline1.png')",
+      },
+      // To use: bg-timeline1
     },
   },
   plugins: [require("tailwindcss-animate")],
