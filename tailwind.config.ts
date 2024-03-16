@@ -74,7 +74,7 @@ const config = {
       },
       // Background com imagem for any timeline item
       backgroundImage: {
-        "timeline1": "url('http://localhost:3000/assets/bg/timeline1.png')",
+        "timeline1": "url('https://computers-lore.vercel.app/assets/bg/timeline1.png')",
       },
       // To use: bg-timeline1
     },
