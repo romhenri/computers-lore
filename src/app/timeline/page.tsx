@@ -8,7 +8,6 @@ const Timeline = () => {
       <LineTitle>
         Linha do Tempo
       </LineTitle>
-
       <Line />
 
       <div className="flex justify-center">
@@ -20,6 +19,7 @@ const Timeline = () => {
           pathPage="timeline/ancestors"
         />
       </div>
+      <Line />
     </main>
   );
 };
