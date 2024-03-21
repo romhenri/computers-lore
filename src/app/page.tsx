@@ -24,6 +24,15 @@ export default function Home() {
           <p className="text-neutral-500">
             Aprendizado dinâmico e interativo!
           </p>
+
+          <Link href={"/timeline"}>
+            <Button 
+              className="mt-8 w-48 h-8"
+              variant="outline"
+              >
+              Começar
+            </Button>
+          </Link>
         </div>
         <div>
           <Image
@@ -35,6 +44,34 @@ export default function Home() {
             height={500}
           />
         </div>
+      </section>
+
+      <section className="flex p-16 border gap-8 rounded
+        flex-wrap lg:p-16 justify-between mb-4
+        lg:flex-nowrap lg:items-center lg:gap-24
+        ">
+        <div className="border-b border-r p-4 rounded lg:mb-4">
+          <h2 className="text-2xl w-32">
+            Objetivo
+          </h2>
+        </div>
+        <p className="text-neutral-500">
+          Este projeto tem como objetivo de ensinar sobre computadores de forma interessante. Abordando a história, curiosidades e arquitetura dos computadores.
+        </p>
+      </section>
+
+      <section className="flex p-16 border gap-8 rounded
+        flex-wrap lg:p-16 justify-between mb-4
+        lg:flex-nowrap lg:items-center lg:gap-24
+        ">
+        <div className="border-b border-r p-4 rounded lg:mb-4">
+          <h2 className="text-2xl w-32">
+            Motivação
+          </h2>
+        </div>
+        <p className="text-neutral-500">
+          Projeto desenvolvido para a disciplina de Introdução a Ciência da Computação ministrada por <strong>Dra. Thaís Gaudêncio</strong> na UFPB.
+        </p>
       </section>
 
       <section 
