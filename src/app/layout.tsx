@@ -10,7 +10,11 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Computers Lore",
-  description: "Next app",
+  description: "Aprenda a história e arquitetura dos computadores de forma dinâmica e interativa!",
+  keywords: ["computadores", "história", "arquitetura", "computação"],
+  other: {
+    author: "Rômulo Henri",
+  }
 };
 
 export default function RootLayout({
