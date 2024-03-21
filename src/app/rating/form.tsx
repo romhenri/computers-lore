@@ -3,6 +3,7 @@
 import emailjs from 'emailjs-com';
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
+import { useState } from "react";
 import { z } from "zod";
 
 import { LineSpacer, Spacer } from "@/components/base/line";
@@ -34,6 +35,15 @@ import {
 } from "@/components/base/tabs";
 import InputOpinion from "@/components/comp/InputOpinion";
 import { Textarea } from "@/components/base/textarea";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  // DialogTrigger,
+} from "@/components/base/dialog";
 
 type IRating = {
   opinion: string;
@@ -42,6 +52,38 @@ type IRating = {
   liked?: string;
   disliked?: string;
   idea?: string;
+};
+
+const DialogSucess = (
+  {
+    open,
+    onOpenChange,
+  }: {
+    open: boolean;
+    onOpenChange: (open: boolean) => void;
+  }
+) => {
+  return (
+    <Dialog open={open} onOpenChange={onOpenChange} >
+      <DialogContent className="sm:max-w-[425px]">
+        <DialogHeader>
+          <DialogTitle>Avaliação Cadastrada!</DialogTitle>
+          <DialogDescription>
+            A sua avaliação foi realizada com sucesso. Obrigado por contribuir com a melhoria da plataforma.
+          </DialogDescription>
+        </DialogHeader>
+
+        <DialogFooter>
+          <Button 
+            type="submit"
+            onClick={() => onOpenChange(false)} 
+          >
+            Ok, obrigado!
+          </Button>
+        </DialogFooter>
+      </DialogContent>
+    </Dialog>
+  );
 };
 
 function sendEmail(data: IRating) {
@@ -72,11 +114,11 @@ function sendEmail(data: IRating) {
   // eslint-disable-next-line
   emailjs.send(serviceID, templateID, templateParams, publicKey)
   .then((response) => {
-    alert("Email enviado com sucesso!")
+    console.log('SUCCESS!', response.status, response.text);
   }, (err) => {
     console.log(err);
   });
-}
+};
 
 const FormSchema = z.object({
   opinion: z
@@ -103,9 +145,11 @@ const FormSchema = z.object({
     .string({
       required_error: "Selecione uma opção.",
     }).optional(),
-})
+});
   
 const TheForm = () => {
+  const [open, setOpen] = useState(false);
+
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
   });
@@ -122,10 +166,13 @@ const TheForm = () => {
     form.setValue('liked', '');
     form.setValue('disliked', '');
     form.setValue('idea', '');
+
+    setOpen(true);
   };
 
   return(
     <Form {...form}>
+      <DialogSucess open={open} onOpenChange={setOpen} />
       <form onSubmit={form.handleSubmit(onSubmit)}>
       <CardContent className="space-y-2">
         <FormField 
