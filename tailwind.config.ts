@@ -80,8 +80,11 @@ const config = {
         "timeline3":
         "url('https://computers-lore.vercel.app/assets/bg/timeline3.png')",
         
-        "timline4":
+        "timeline4":
         "url('https://computers-lore.vercel.app/assets/bg/timeline4.png')",
+
+        "timeline5":
+        "url('https://computers-lore.vercel.app/assets/bg/timeline5.png')",
       },
       // To use: bg-timeline1
     },

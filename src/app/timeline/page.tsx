@@ -26,6 +26,22 @@ const Timeline = () => {
           img="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/06/26776_1798DEE935286D54.jpg"
           pathPage="timeline/gen1"
         />
+
+        <ChapCard
+          name="4º - Segunda Geração"
+          info="1956"
+          desc="Transistores e circuitos integrados"
+          img="https://upload.wikimedia.org/wikipedia/commons/6/69/IBM_PC_AT.jpg"
+          pathPage="timeline/gen2"
+        />
+
+        <ChapCard
+          name="5º - Terceira Geração"
+          info="1964"
+          desc="Microprocessadores"
+          img="https://www.hardware.com.br/static/20180412/apple-2.jpg"
+          pathPage="timeline/gen3"
+        />
       </div>
       <Line />
     </main>

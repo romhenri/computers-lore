@@ -3,7 +3,9 @@ const nextConfig = {
   images: {
     domains: [
       'img.freepik.com',
-      'www.cnnbrasil.com.br'
+      'www.cnnbrasil.com.br',
+      'upload.wikimedia.org',
+      'www.hardware.com.br'
     ],
   },
 }
