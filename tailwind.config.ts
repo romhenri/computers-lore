@@ -80,9 +80,8 @@ const config = {
         "timeline3":
         "url('https://computers-lore.vercel.app/assets/bg/timeline3.png')",
         
-        // gen1-t
-        "timeline3-t": 
-        "url('http://localhost:3000/assets/bg/timeline3.png')",
+        "timline4":
+        "url('https://computers-lore.vercel.app/assets/bg/timeline4.png')",
       },
       // To use: bg-timeline1
     },

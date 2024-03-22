@@ -17,7 +17,7 @@ const AncestorsPage = () => {
       className={`pt-4 lg:border-x lg:border-b lg:p-4 ${montserrat.className}`}
     >
       <LineTitle>
-        1º Ancestrais
+        1º Geração
       </LineTitle>
       <Line />
 
