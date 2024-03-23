@@ -22,9 +22,9 @@ const Timeline = () => {
         <ChapCard
           name="2º - Funcionais"
           info="1804"
-          desc="Computadores pessoais"
+          desc="Grandes Máquinas"
           img="https://i.pinimg.com/736x/75/1f/c5/751fc55da2f3e9f2c47f80f66d3fce2b.jpg"
-          pathPage="timeline/gen4"
+          pathPage="timeline/functionals"
         />
 
         <ChapCard
