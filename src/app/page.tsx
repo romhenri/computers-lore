@@ -46,12 +46,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex p-16 border gap-8 rounded
-        flex-wrap lg:p-16 justify-between mb-4
+      <section className="flex p-12 border gap-8 rounded
+        flex-wrap lg:p-12 justify-between mb-4
         lg:flex-nowrap lg:items-center lg:gap-24
         ">
         <div className="border-b border-r p-4 rounded lg:mb-4">
-          <h2 className="text-2xl w-32">
+          <h2 className="text-2xl w-36">
             Objetivo
           </h2>
         </div>
@@ -60,23 +60,37 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="flex p-16 border gap-8 rounded
-        flex-wrap lg:p-16 justify-between mb-4
+      <section className="flex p-12 border gap-8 rounded
+        flex-wrap lg:p-12 justify-between mb-4
         lg:flex-nowrap lg:items-center lg:gap-24
         ">
         <div className="border-b border-r p-4 rounded lg:mb-4">
-          <h2 className="text-2xl w-32">
+          <h2 className="text-2xl w-36">
             Motivação
           </h2>
         </div>
         <p className="text-neutral-500">
-          Projeto desenvolvido para a disciplina de Introdução a Ciência da Computação ministrada por <strong>Dra. Thaís Gaudêncio</strong> na UFPB.
+          Projeto desenvolvido para a disciplina de Introdução a Ciência da Computação ministrada pela <strong>Dra. Thaís Gaudêncio</strong> na UFPB.
+        </p>
+      </section>
+
+      <section className="flex p-12 border gap-8 rounded
+        flex-wrap lg:p-12 justify-between mb-4
+        lg:flex-nowrap lg:items-center lg:gap-24
+        ">
+        <div className="border-b border-r p-4 rounded lg:mb-4">
+          <h2 className="text-2xl w-36">
+            Justificativa
+          </h2>
+        </div>
+        <p className="text-neutral-500">
+          É de fundamental importância para todo cientista da computação conhecer a história e princípais fundamentos dos computadores.
         </p>
       </section>
 
       <section 
-        className="flex p-16 border gap-8 rounded
-        flex-wrap lg:p-16 justify-between
+        className="flex p-12 border gap-8 rounded
+        flex-wrap lg:p-12 justify-between
         lg:flex-nowrap lg:items-center lg:gap-24
         "
       >

@@ -6,7 +6,7 @@ const Footer = () => {
       <a href="https://computers-lore.vercel.app/"
         className="text-center block text-neutral-600 text-sm py-4"
       >
-        Computers Lore (2024) - Projeto para Introdução a Ciência da Computação por <strong>Thaís Gaudêncio</strong>
+        Computers Lore (2024)
       </a>
     </footer>
   );
