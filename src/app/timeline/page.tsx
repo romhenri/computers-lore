@@ -18,6 +18,14 @@ const Timeline = () => {
           img="https://img.freepik.com/fotos-premium/abaco-de-madeira-velho-e-antigo-para-contar-e-calcular_1831-703.jpg"
           pathPage="timeline/ancestors"
         />
+        
+        <ChapCard
+          name="2º - Funcionais"
+          info="1804"
+          desc="Computadores pessoais"
+          img="https://i.pinimg.com/736x/75/1f/c5/751fc55da2f3e9f2c47f80f66d3fce2b.jpg"
+          pathPage="timeline/gen4"
+        />
 
         <ChapCard
           name="3º - Primeira Geração"
@@ -31,15 +39,15 @@ const Timeline = () => {
           name="4º - Segunda Geração"
           info="1956"
           desc="Transistores e circuitos integrados"
-          img="https://upload.wikimedia.org/wikipedia/commons/6/69/IBM_PC_AT.jpg"
+          img="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/DM_IBM_S360.jpg/1200px-DM_IBM_S360.jpg"
           pathPage="timeline/gen2"
         />
 
         <ChapCard
           name="5º - Terceira Geração"
           info="1964"
-          desc="Microprocessadores"
-          img="https://www.hardware.com.br/static/20180412/apple-2.jpg"
+          desc="Máquinas de grande porte"
+          img="https://tm.ibxk.com.br/2015/05/26/26140720586596.jpg"
           pathPage="timeline/gen3"
         />
       </div>

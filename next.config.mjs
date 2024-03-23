@@ -5,7 +5,9 @@ const nextConfig = {
       'img.freepik.com',
       'www.cnnbrasil.com.br',
       'upload.wikimedia.org',
-      'www.hardware.com.br'
+      'www.hardware.com.br',
+      'i.pinimg.com',
+      'tm.ibxk.com.br',
     ],
   },
 }

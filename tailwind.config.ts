@@ -77,6 +77,12 @@ const config = {
         "timeline1": 
         "url('https://computers-lore.vercel.app/assets/bg/timeline1.png')",
 
+        "timeline2":
+        "url('https://computers-lore.vercel.app/assets/bg/timeline2.png')",
+
+        "timeline2-t":
+        "url('http://localhost:3000/assets/bg/timeline2.png')",
+
         "timeline3":
         "url('https://computers-lore.vercel.app/assets/bg/timeline3.png')",
         
