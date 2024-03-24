@@ -76,7 +76,10 @@ const DialogSucess = (
         <DialogFooter>
           <Button 
             type="submit"
-            onClick={() => onOpenChange(false)} 
+            onClick={() => {
+              onOpenChange(false);
+              window.location.reload();
+            }} 
           >
             Ok, obrigado!
           </Button>
@@ -96,18 +99,39 @@ function sendEmail(data: IRating) {
     idea,
   } = data;
 
+  let header = ``;
+
+  const name = document.getElementById("name") as HTMLInputElement;
+  const email = document.getElementById("email") as HTMLInputElement;
+
+  if (name.value && email.value) {
+    header += `de ${name.value} (${email.value})`;
+  } else {
+    header += "Anônima";
+  }
+
+  const meta = {
+    time: new Date().toLocaleString('pt-BR', { timeZone: 'America/Sao_Paulo' }),
+    platform: navigator.platform,
+    browser: navigator.userAgent,
+  }
+
   const message = `Design: ${opinion}/5
   Conteúdo: ${opinion2}/5
-  Didática: ${opinion3}/5
+  Utilidade: ${opinion3}/5
   Gostou: ${liked || "-"}
   Não gostou: ${disliked || "-"}
   Sugestão: ${idea || "-"}
+
+  Enviado em: ${meta.time}
+  Plataforma: ${meta.platform}
+  Navegador: ${meta.browser}
   `
 
   const serviceID = "service_ne0oufn";
   const templateID = "template_vjo82vy";
   const templateParams = {
-    from_name: `Avaliação de Usuário`,
+    from_name: header,
     message: message,
   }
   const publicKey = "xFBAbGm4Q9scA5Rzl";
@@ -209,8 +233,8 @@ const TheForm = () => {
           render={({field}) => (
             <FormItem>
               <InputOpinion 
-                mainText="Didática"
-                desc="Clareza e objetividade na comunicação"
+                mainText="Utilidade"
+                desc="Utilidade das ferrramentas"
                 onValueChange={field.onChange}
               />
             </FormItem>
@@ -313,15 +337,20 @@ const FormSection = () => {
             </CardHeader>
             <CardContent className="space-y-2">
               <div className="space-y-1">
-                <Label htmlFor="name">Nome:</Label>
-                <Input id="name" 
+                <Label htmlFor="name">Nome e Sobrenome:</Label>
+                <Input
+                  id="name" 
                   defaultValue="" 
                   placeholder="Alan Turing"
                 />
               </div>
               <div className="space-y-1">
                 <Label htmlFor="username">Email:</Label>
-                <Input id="username" defaultValue="" placeholder="exemplo@gmail.com"/>
+                <Input
+                  id="email" 
+                  defaultValue=""
+                  placeholder="exemplo@gmail.com"
+                />
               </div>
               <LineSpacer />
               </CardContent>
