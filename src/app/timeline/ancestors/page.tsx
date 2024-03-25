@@ -19,7 +19,7 @@ const AncestorsPage = () => {
   return (
     <main className={`pt-4 lg:border-x lg:border-b lg:p-4 ${montserrat.className}`}>
       <LineTitle>
-        1º Ancestrais
+        Ancestrais
       </LineTitle>
       <Line />
 
