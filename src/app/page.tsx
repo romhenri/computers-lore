@@ -46,6 +46,30 @@ export default function Home() {
         </div>
       </section>
 
+      <section 
+        className="flex p-12 border gap-8 rounded mb-4
+        flex-wrap lg:p-12 justify-between
+        lg:flex-nowrap lg:items-center lg:gap-24
+        "
+      >
+        <div>
+          <h2 className="text-xl">
+            Conheça o sistema Binário!
+          </h2>
+          <p className="text-neutral-500">
+            Contamos com uma ferramenta para converter números decimais em binários.
+          </p>
+
+        </div>
+        <div>
+          <Link href={"/binary"}>
+            <Button variant="outline" className="px-12">
+              Sobre Binário
+            </Button>
+          </Link>
+        </div>
+      </section>
+
       <section className="flex p-12 border gap-8 rounded
         flex-wrap lg:p-12 justify-between mb-4
         lg:flex-nowrap lg:items-center lg:gap-24
