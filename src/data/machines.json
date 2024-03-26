@@ -182,7 +182,7 @@
     ],
     "country": "UK",
     "institute": null,
-    "year": null,
+    "year": 1837,
     "betweenMax": null,
     "yearAC": null,
     "description": "A Máquina Analítica foi um projeto do século XIX concebido por Charles Babbage. Era um computador mecânico programável, usando cartões perfurados para programação. Podia realizar qualquer operação matemática, tinha o moinho(CPU) , o armazém, o leitor e a impressora. Apesar de não ter sido totalmente construída,foi a primeira máquina que mereceu ser chamada de computador.",
@@ -522,7 +522,7 @@
     "nextId": 20,
     "images": [
       {
-        "uri": "https://images.computerhistory.org/revonline/images/102646243-05-01-06.jpg?w=600",
+        "uri": "https://files.meiobit.com/wp-content/uploads/2021/01/1280px-Altair_8800_Smithsonian_Museum.jpg",
         "label": "Altair 8800"
       }
     ],

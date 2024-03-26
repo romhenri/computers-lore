@@ -24,7 +24,7 @@ const HeaderLink : React.FC<IHeaderLink> = (
     >
       {children}
     </Link>
-  )
+  );
 };
 
 export default HeaderLink;

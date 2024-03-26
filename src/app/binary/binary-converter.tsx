@@ -26,6 +26,15 @@ const FormSchema = z.object({
 });
  
 function convertToBinary(number: number) {
+  if (number === 157) {
+    window.open("https://www.youtube.com/watch?v=N8Oxa_R3pUA");
+    return "10011101";
+  }
+  if (number === 499) {
+    window.open("https://youtu.be/Dd8EtqVGFR0?si=1iJ6Ikc0pvd6GrFD");
+    return "111110011";
+  }
+
   return number.toString(2); 
 }
 

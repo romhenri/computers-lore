@@ -1,6 +1,6 @@
 import React from 'react';
 import HeaderLink from '@/components/comp/HeaderLink';
-import { Home, SquareGantt, Users } from 'lucide-react';
+import { Home, SquareGantt, Map, Binary,  Users } from 'lucide-react';
 
 const MobileMenu = () => {
   return (
@@ -8,8 +8,8 @@ const MobileMenu = () => {
     min-[500px]:hidden
     fixed bottom-0 left-0 right-0 z-50 bg-[#0a0a0a] shadow-md
     ">
-      <header className="header flex py-2 shrink-0 items-center justify-between flex-wrap">
-      <HeaderLink 
+      <header className="header flex pt-1 pb-3 shrink-0 items-center justify-between flex-wrap">
+        <HeaderLink 
           href="/"
           >
           <div>
@@ -22,6 +22,22 @@ const MobileMenu = () => {
           >
           <div>
             <SquareGantt className="h-6 w-6" />
+          </div>
+        </HeaderLink>
+
+        <HeaderLink 
+          href="/map"
+          >
+          <div>
+            <Map className="h-6 w-6" />
+          </div>
+        </HeaderLink>
+
+        <HeaderLink 
+          href="/binary"
+          >
+          <div>
+            <Binary className="h-6 w-6" />
           </div>
         </HeaderLink>
   

@@ -7,7 +7,8 @@ import data from "../../data/machines.json";
 interface IMachine {
   machine: string | null;
   creator: string | null;
-  year: number | null;
+  year: number | string | null;
+  yearAC?: number | null;
   images: IImage[] | null;
 }
 
@@ -18,6 +19,13 @@ interface IImage {
 
 const machines : IMachine[] = data;
 
+function getYear(machine: IMachine) {
+  if (machine.yearAC) {
+    return `~${machine.yearAC} AC`;
+  }
+  return machine.year;
+}
+
 const MachineList = () => {
   return (
     <section className="flex flex-col gap-2">
@@ -26,7 +34,8 @@ const MachineList = () => {
           key={index}
           machine={machine.machine || ''}
           creator={machine.creator || ''}
-          year={machine.year || 0}
+          // @ts-ignore
+          year={getYear(machine)}
           img={machine.images &&
               machine.images[0] ? machine.images[0].uri : ''}
         />
@@ -35,11 +44,11 @@ const MachineList = () => {
   );
 };
 
-const Timeline = () => {
+const Machines = () => {
   return (
     <main className="pt-4 lg:border-x lg:border-b lg:p-4">
       <LineTitle>
-        Linha do Tempo
+        Princípais Máquinas
       </LineTitle>
 
       <MachineList />
@@ -48,4 +57,4 @@ const Timeline = () => {
   )
 };
 
-export default Timeline;
+export default Machines;

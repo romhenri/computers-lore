@@ -230,7 +230,7 @@ const initialEdges = [
     target: '37'
   },
   {
-    id: 'e2-37',
+    id: 'e2-371',
     source: '12',
     target: '37'
   },
@@ -243,92 +243,92 @@ const initialEdges = [
 
   // 3X to 4X
   {
-    id: 'e3-40',
+    id: 'e3-40-30-40',
     source: '30',
     target: '40'
   },
   {
-    id: 'e3-41',
+    id: 'e3-41-30-41',
     source: '30',
     target: '41'
   },
   {
-    id: 'e3-42',
+    id: 'e3-42-30-42',
     source: '30',
     target: '42'
   },
   {
-    id: 'e3-43',
+    id: 'e3-43-30-43',
     source: '30',
     target: '43'
   },
   {
-    id: 'e3-40',
+    id: 'e3-40-31-40',
     source: '31',
     target: '40'
   },
   {
-    id: 'e3-41',
+    id: 'e3-41-31-41',
     source: '31',
     target: '41'
   },
   {
-    id: 'e3-42',
+    id: 'e3-42-31-42',
     source: '31',
     target: '42'
   },
   {
-    id: 'e3-43',
+    id: 'e3-43-31-43',
     source: '31',
     target: '43'
   },
   {
-    id: 'e3-40',
+    id: 'e3-40-32-40',
     source: '32',
     target: '40'
   },
   {
-    id: 'e3-41',
+    id: 'e3-41-32-41',
     source: '32',
     target: '41'
   },
   {
-    id: 'e3-42',
+    id: 'e3-42-32-42',
     source: '32',
     target: '42'
   },
   {
-    id: 'e3-43',
+    id: 'e3-43-32-43',
     source: '32',
     target: '43'
   },
   {
-    id: 'e3-44',
+    id: 'e3-44-30-44',
     source: '30',
     target: '44'
   },
   {
-    id: 'e3-44',
+    id: 'e3-44-31-44',
     source: '31',
     target: '44'
   },
   {
-    id: 'e3-44',
+    id: 'e3-44-32-44',
     source: '32',
     target: '44'
   },
   {
-    id: 'e3-45',
+    id: 'e3-45-33-45',
     source: '33',
     target: '45'
   },
   {
-    id: 'e3-46',
+    id: 'e3-46-33-46',
     source: '33',
     target: '46'
   },
   {
-    id: 'e3-47',
+    id: 'e3-47-36-47',
     source: '36',
     target: '47'
   },
@@ -336,7 +336,9 @@ const initialEdges = [
  
 export default function Map() {
   return (
-    <div style={{ width: '100vw', height: '100vh' }}>
+    <div 
+      className="border mt-2"
+      style={{ width: '100%', height: '600px' }}>
       <ReactFlow nodes={initialNodes} edges={initialEdges} />
     </div>
   );

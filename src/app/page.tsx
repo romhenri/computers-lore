@@ -108,7 +108,14 @@ export default function Home() {
           </h2>
         </div>
         <p className="text-neutral-500">
-          É de fundamental importância para todo cientista da computação conhecer a história e princípais fundamentos dos computadores.
+          É de fundamental para todo cientista da computação conhecer a história e princípais fundamentos dos computadores. 
+
+          <Link
+            href="/map"
+            className="text-primary-500 underline pl-2"
+          >
+            Conheça o mapa de carreiras.
+          </Link>
         </p>
       </section>
 

@@ -1,12 +1,14 @@
 import LineTitle from "@/components/base/line-title";
 import { Line } from "@/components/base/line";
 import ChapCard from "@/components/struct/ChapCard";
+import { Button } from "@/components/base/button";
+import Link from "next/link";
 
 const Timeline = () => {
   return (
     <main className="pt-4 lg:border-x lg:border-b lg:p-4">
       <LineTitle>
-        Linha do Tempo
+        Capítulos da História
       </LineTitle>
       <Line />
 
@@ -51,6 +53,19 @@ const Timeline = () => {
           pathPage="timeline/gen3"
         />
       </div>
+      <Line />
+        <div className="flex justify-center">
+          <Link
+            href="/machines"
+          >
+            <Button
+              className="w-64 h-12"
+              variant="outline"
+            >
+              Conheça as Princípais Máquinas
+            </Button>
+          </Link>
+        </div>
       <Line />
     </main>
   );
