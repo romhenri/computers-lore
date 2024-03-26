@@ -40,16 +40,14 @@ const AncestorsPage = () => {
         tokens="h-[2680px] text-white text-2xl leading-10"
       >
         <div className="pt-[58px] ">
-          <h2>
-           <h3 className={` text-[3rem] ${koulen.className} text-center`}>
-            <span className="ml-10 border-b-4 border-sky-500 inline-block">
+           <h3 className={`text-[3rem] ${koulen.className} text-center`}>
+            <span className="ml-[24px] border-b-4 border-sky-500 inline-block">
             IBM/360 (1964)
             </span>
            </h3>
-          </h2>
-          <p className={` pt-[50px] text-right text-sky-100`}>
+          <p className={`pt-[40px] text-right text-sky-100`}>
           Com sua arquitetura modular e compatibilidade entre modelos, proporcionou flexibilidade e proteção de investimento aos usuários. Introduziu conceitos como comprimento de palavra variável e memória virtual, influenciando profundamente o 
-          desenvolvimento<br/>                    futuro   de computadores.<br/> 
+          desenvolvimento<br/> futuro de computadores.<br/> 
           Vendedor ao lado de<br/> um modelo IBM.<br/>
           </p>
         </div>
@@ -57,7 +55,7 @@ const AncestorsPage = () => {
         <div className="pt-[380px]">
           <div className={`ml-5 text-[1.5rem] ${league.className} `}>
             Conheça
-            <h3 className={`ml-6 text-[2.5rem] ${koulen.className} text-sky-400`}>
+            <h3 className={`ml-[0px] text-[2.5rem] ${koulen.className} text-sky-400`}>
             IBM 7030 (1961)
             </h3 >
           </div>
@@ -67,7 +65,7 @@ const AncestorsPage = () => {
         </div>
 
         <div className="pt-[200px]">
-          <h3 className={`pl-[38px] text-[2.5rem] ${koulen.className} text-neutral-200 `}>
+          <h3 className={`pl-[24px] text-[2.5rem] ${koulen.className} text-neutral-200 `}>
             PDP-8<span className={`text-sky-400`}> (1965)</span >
           </h3>
           <p className={`ml-5 pt-[30px] text-blue-100`}>

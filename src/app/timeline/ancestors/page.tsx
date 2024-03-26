@@ -27,8 +27,9 @@ const AncestorsPage = () => {
         bg="bg-timeline1"
         tokens="h-[2205px] text-black text-xl leading-10"
       >
-        <div>
-          <div className="pt-[50px]">
+        <div className="relative">
+
+          <div className="absolute z-10 pt-[50px]">
             <h3 className={`underline text-[2rem] ${grenze.className} text-2xl pb-[10px]`}>
               Ábaco (5.500 AC)
             </h3>
@@ -37,7 +38,7 @@ const AncestorsPage = () => {
             Com suas contas deslizantes, ele representou o primeiro passo na evolução dos dispositivos de computação, facilitando a matemática e o comércio em civilizações antigas.
           </div>
 
-          <div className="absolute z-10 pt-[250px]">
+          <div className="absolute z-20 pt-[640px]">
             <h3 className={`underline text-[2rem] ${grenze.className} text-2xl pb-[10px]`}>
               Pascalina (1642)
             </h3>
@@ -46,17 +47,18 @@ const AncestorsPage = () => {
             Início da automação dos cálculos, contribuindo para o desenvolvimento posterior das calculadoras e computadores modernos com suas operações mecânicas.
           </div>
 
-          <div className="absolute z-20 pt-[1130px] pr-[20px] text-right">
+          <div className="absolute z-30 pt-[1490px] pr-[20px] text-right">
             <h3 className={`underline text-[2rem] ${grenze.className} text-2xl pb-[10px]`}>
               Roda de Leibniz (1673)
             </h3>
             Essa foi uma tentativa inovadora de criar uma máquina de cálculo capaz de multiplicação e divisão. Com seus cilindros numerados <br /> e  sistema de engrenagens,  a <br /> Roda de Leibniz antecipou <br /> conceitos essenciais da <br /> computação, como a <br /> representação binária <br /> e a lógica booleana.
           </div>
 
-          <div className="pt-[374px] hidden">
+          <div className="absolute z-40
+          w-full h-[2185px]">
             <Link href="/timeline">
               <Button 
-                className="w-full"
+                className="w-full absolute bottom-1"
                 variant="secondary"
               >
                 Concluir Capítulo
