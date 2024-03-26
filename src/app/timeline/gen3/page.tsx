@@ -62,7 +62,7 @@ const AncestorsPage = () => {
           </p>
         </div>
 
-        <div className="pt-[176px]">
+        <div className="pt-[105px] hidden">
           <Link href="/timeline">
             <Button 
               className="w-full"

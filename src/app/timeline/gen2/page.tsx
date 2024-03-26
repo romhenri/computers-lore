@@ -76,11 +76,11 @@ const AncestorsPage = () => {
           </p>
         </div>
 
-        <div className="pt-[310px]">
+        <div className="pt-[270px]">
 
           <Link href="/timeline">
             <Button 
-              className="w-full"
+              className="w-full bg-blue-600"
               variant="secondary"
             >
               Concluir Capítulo

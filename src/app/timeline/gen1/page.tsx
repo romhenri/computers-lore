@@ -3,7 +3,7 @@ import Timeline from "@/components/struct/Timeline";
 import { Button } from "@/components/base/button";
 import { Line } from "@/components/base/line";
 import Link from 'next/link';
-import { Montserrat, Bebas_Neue, Koulen, League_Gothic, Krona_One, Kufam, Gugi, Khand } from "next/font/google";
+import { Montserrat, Bebas_Neue, Koulen, Krona_One, Kufam, Gugi, Khand } from "next/font/google";
 
 const montserrat = Montserrat({
   weight: '500',
@@ -36,11 +36,6 @@ const krona = Krona_One({
 });
 
 const koulen = Koulen({
-  weight: '400',
-  preload: false,
-});
-
-const league = League_Gothic({
   weight: '400',
   preload: false,
 });
@@ -97,7 +92,7 @@ const AncestorsPage = () => {
           </p>
           <h2 className={`${khand.className} text-[1.8rem]  text-green-400 pl-[28px]
           `}>
-            "Não podemos esperar que uma máquina nos dê uma resposta,<br/>  sem antes fornecermos<br/>  a ela uma pergunta<br/>  adequada." - Alan Turing
+            &#34;Não podemos esperar que uma máquina nos dê uma resposta,<br/>  sem antes fornecermos<br/>  a ela uma pergunta<br/>  adequada.&#34; - Alan Turing
           </h2>
         </div>
 
