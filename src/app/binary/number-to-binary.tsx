@@ -18,7 +18,6 @@ import {
 import { Input } from "@/components/base/input";
 import { Card } from "@/components/base/card";
 import { Line } from "@/components/base/line";
- 
 const FormSchema = z.object({
   number: z.string().min(1, {
     message: "Insira um número!",
@@ -107,81 +106,10 @@ const NumberToBinary = () => {
         <Button type="submit">
           Converter
         </Button>
-      </form>
-    </Form>
-  );
-};
-
-const BinaryToNumber = () => {
-  const [number, setNumber] = useState<number>(0);
-
-  const form = useForm<z.infer<typeof FormSchema>>({
-    resolver: zodResolver(FormSchema)
-  });
-
-  function onSubmit(data: z.infer<typeof FormSchema>) {
-    setNumber(
-      parseInt(data.number, 2)
-    );
-  };
-
-  return (
-    <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="w-full space-y-6">
-        <FormField
-          control={form.control}
-          name="number"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel className="pt-4">
-                Número Binário:
-              </FormLabel>
-              <FormControl>
-                <Input
-                  placeholder="Ex: 0-1111..." 
-                  {...field} 
-                  onChange={(e) => {
-                    const re = /^[0-1\b]+$/;
-                    if (e.target.value === '' || re.test(e.target.value)) {
-                      field.onChange(e);
-                    }
-                  }}
-                />
-                <FormMessage />
-              </FormControl>
-              <FormDescription>
-                Números binários.
-              </FormDescription>
-
-              <p
-                className="text-sm pt-4"
-              >
-                Número Decimal:
-              </p>
-              <Card>
-                <div 
-                className="bg-neutral-900">
-                  <p 
-                    className="text-sm p-2 ">
-                    {
-                      number 
-                      
-                      ? `${number}`
-                      : `[Resultado]`
-                    }
-                  </p>
-                </div>
-              </Card>
-            </FormItem>
-          )}
-        />
         <Line />
-        <Button type="submit">
-          Converter
-        </Button>
       </form>
     </Form>
   );
 };
 
-export { NumberToBinary, BinaryToNumber };
+export default NumberToBinary;

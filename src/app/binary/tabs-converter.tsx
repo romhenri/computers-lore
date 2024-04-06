@@ -1,20 +1,15 @@
 'use client';
 
 import { useState } from "react";
-import { BinaryToNumber, NumberToBinary } from "./binary-converter";
+import NumberToBinary from "./number-to-binary";
+import BinaryToNumber from "./binary-to-number";
 
 const TabsConverter = () => {
-  const [isDefault, setIsDefault] = useState(true);
 
   return (
     <div className="w-full space-y-6">
-      {
-        isDefault ? (
-          <NumberToBinary />
-        ) : (
-          <BinaryToNumber />
-        )
-      }
+      <NumberToBinary />
+      <BinaryToNumber />
     </div>
   );
 };
