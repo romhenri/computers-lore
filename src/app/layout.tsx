@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
-import { ThemeProvider } from "../providers/theme-provider";
+import { ThemeProvider } from "../providers/ThemeProvider";
 import Header from '@/components/struct/Header';
 import Footer from "@/components/struct/Footer";
 import MobileMenu from "@/components/struct/MobileMenu";
