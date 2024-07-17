@@ -4,12 +4,15 @@
 
 > Plataforma de aprendizado sobre a História dos Computadores.
 
+<img 
+  src="./public/assets/banner.png"
+  alt="Página Inicial do Computers Lore"
+  style="width: 100%;"
+/>
 
 <hr>
 
 ### Metas e Objetivos
-
-O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
 -   [x] Timelines;
 -   [x] Lista dos Principais;
