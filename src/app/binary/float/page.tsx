@@ -31,6 +31,59 @@ const About = () => {
         className="w-full my-2 rounded"
       />
       <Line />
+      <h3>
+        Converter parte fracionária para binário
+      </h3>
+      <ol className="text-neutral-500 list-decimal pl-8">
+        <li>
+          Multiplicar a parte fracionária por 2
+        </li>
+        <li>
+          Separar a parte inteira e a parte fracionária
+        </li>
+        <li>
+          Repetir o processo até a parte fracionária ser 0
+        </li>
+      </ol>
+      <p>
+        Exemplo: 0,6
+      </p>
+      <ol className="text-neutral-500 list-decimal pl-8">
+        <li>
+          0,6 x 2 = 1,2
+        </li>
+
+
+        
+      </ol>
+
+      <Line />
+      <p>
+        Procedimento de conversão 7,6
+      </p>
+      <ol className="text-neutral-500 list-decimal pl-8">
+        <li>
+          Converter 7 para binário: 111
+        </li>
+        <li>
+          Converter 0,6 para binário: 0,1001
+        </li>
+        <li>
+          Juntar os dois: 111,1001
+        </li>
+        <li>
+          Normalizar: 1,111001 x 2^2
+        </li>
+        <li>
+          Excesso de 127: 129
+        </li>
+        <li>
+          129 em binário: 10000001
+        </li>
+        <li>
+          Juntar tudo: 0 10000001 11100100000000000000000
+        </li>
+      </ol>
     </main>
   );
 };
